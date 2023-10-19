@@ -7,7 +7,7 @@ const cors = require("cors");
 const connectDB = require("./database/db");
 const appTypeDefs = require("./graphql/typeDefs");
 const resolver = require("./graphql/resolvers/index");
-const pubSub = require("PubSub");
+const { PubSub } = require("PubSub");
 
 const port = process.env.PORT || 2000;
 
@@ -22,7 +22,7 @@ async function startServer() {
     // Pass the configuration or resolvers
     typeDefs: appTypeDefs,
     resolvers: resolver,
-    context: ({ req }) => ({ req, pubSub }),
+    context: ({ req }) => ({ req, PubSub }),
   });
 
   app.use(bodyParser.json());
