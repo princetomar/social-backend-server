@@ -23,6 +23,10 @@ async function startServer() {
     typeDefs: appTypeDefs,
     resolvers: resolver,
     context: ({ req }) => ({ req, PubSub }),
+    formatError: (error) => {
+      console.log(error);
+      return error;
+    },
   });
 
   app.use(bodyParser.json());
