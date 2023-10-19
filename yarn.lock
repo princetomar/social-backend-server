@@ -1590,6 +1590,11 @@
   "resolved" "https://registry.npmjs.org/pstree.remy/-/pstree.remy-1.1.8.tgz"
   "version" "1.1.8"
 
+"pubsub@^3.2.1":
+  "integrity" "sha512-SuM1yTjJg5mQRVi1ADjjQ/U+pYujijtYvxZLPLvrivSJe9Bh3/cqDFS1RKdmLW2VKwRPc9lCj2s3loJKDbGdwg=="
+  "resolved" "https://registry.npmjs.org/pubsub/-/pubsub-3.2.1.tgz"
+  "version" "3.2.1"
+
 "punycode@^2.1.1":
   "integrity" "sha512-rRV+zQD8tVFys26lAGR9WUuS4iUAngJScM+ZRSKtvl5tKeZ2t5bvdNFdNHBW9FWR4guGHlgmsZ1G7BSm2wTbuA=="
   "resolved" "https://registry.npmjs.org/punycode/-/punycode-2.3.0.tgz"
